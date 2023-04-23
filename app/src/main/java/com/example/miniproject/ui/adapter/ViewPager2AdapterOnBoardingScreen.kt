@@ -43,7 +43,6 @@ class ViewPager2AdapterOnBoarding(private var content: FragmentManager,var list:
         val view = LayoutInflater.from(parent.context).inflate(R.layout.on_boarding_screen_view, parent, false)
         return ViewHolder(view)
     }
-
     override fun onBindViewHolder(holder: ViewPager2AdapterOnBoarding.ViewHolder, position: Int) {
 
 
