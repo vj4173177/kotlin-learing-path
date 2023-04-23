@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">MiniProject</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="mobile">Enter Your Mobile No.</string>
+    <string name="terms">I agree all terms &amp; conditions  &amp; Privacy Policy</string>
+    <string name="continueString">Continue</string>
+    <string name="verifyString">Verify</string>
+    <string name="enterotp">Enter OTP</string>
+    <string name="otpsentin">Otp Stent in +91 9893838748</string>
+    <string name="resendin">Resend in 3s</string>
+</resources>

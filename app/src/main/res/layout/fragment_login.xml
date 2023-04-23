@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--<layout xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    xmlns:app="http://schemas.android.com/apk/res-auto"-->
+<!--    xmlns:tools="http://schemas.android.com/tools">-->
+
+<!--    <data>-->
+<!--        <variable-->
+<!--            name="loginPhoneNumberLayoutDataPass"-->
+<!--            type="com.example.miniproject.ui.auth.AuthViewModel" />-->
+<!--    </data>-->
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/loginPhoneNumberLayout"
+    android:layout_width="match_parent"
+    android:layout_marginHorizontal="16dp"
+    android:layout_height="match_parent"
+    tools:context=".ui.auth.Login">
+
+
+<ImageView
+    android:id="@+id/logoInPhoneNumberLayout"
+    android:src="@drawable/logo"
+    android:layout_width="300dp"
+    android:layout_marginTop="70dp"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    android:layout_height="100dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="180dp"
+        android:text="@string/mobile"
+        android:textSize="30dp"
+        android:id="@+id/mobile_no"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.541"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        app:layout_constraintTop_toBottomOf="@+id/mobile_no"
+        android:id="@+id/LoginPhoneNumberLayoutEditTextField"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/edit_text_background"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:paddingTop="12dp"
+        android:paddingBottom="12dp"
+        android:hint="Enter text here"
+        android:textColorHint="#9E9E9E"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:maxLines="1"
+        android:inputType="number"
+        android:imeOptions="actionDone" />
+
+
+    <CheckBox
+        android:minWidth="0dp"
+        android:minHeight="0dp"
+        android:id="@+id/LoginPhoneNumberLayoutTermsAndConditionCheckBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/terms"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/LoginPhoneNumberLayoutEditTextField"
+        />
+
+
+    <Button
+        android:id="@+id/ContinueButton"
+        app:layout_constraintTop_toBottomOf="@+id/LoginPhoneNumberLayoutTermsAndConditionCheckBox"
+        android:layout_width="match_parent"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#ED1C4E"
+        android:layout_marginTop="30dp"
+        android:text="@string/continueString"
+        android:textAllCaps="false"
+        android:textSize="20dp"
+        android:layout_height="60dp"/>
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+<!--</layout>-->
+<!--    android:value="@={loginPhoneNumberLayoutDataPass.checkBox}"-->
+<!--    android:onClick="@{loginPhoneNumberLayoutDataPass::onLoginButtonClick}"-->
+<!--    android:text="@={loginPhoneNumberLayoutDataPass.phoneNo}"-->

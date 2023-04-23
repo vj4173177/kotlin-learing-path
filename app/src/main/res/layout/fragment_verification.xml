@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_marginHorizontal="16dp"
+    android:layout_height="match_parent"
+    tools:context=".ui.auth.verification">
+
+
+    <ImageView
+        android:id="@+id/logo"
+        android:src="@drawable/logo"
+        android:layout_width="300dp"
+        android:layout_marginTop="70dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_height="100dp"/>
+
+    <TextView
+        android:id="@+id/enterOtp"
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+        android:textSize="24dp"
+        android:textColor="@color/black"
+        android:text="@string/enterotp"
+        app:layout_constraintBottom_toTopOf="@+id/mobile_no"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logo" />
+
+
+    <TextView
+        android:layout_marginTop="70dp"
+        android:id="@+id/mobile_no"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+
+        android:gravity="center"
+        android:text="@string/otpsentin"
+        android:textColor="@color/black"
+        android:textSize="19dp"
+
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.235"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logo" />
+
+    <ImageButton
+
+        android:id="@+id/editMobileNum"
+        android:layout_width="40dp"
+        android:layout_marginLeft="10dp"
+        android:src="@drawable/baseline_edit_24"
+        android:layout_height="45dp"
+        android:backgroundTint="#D4EEF1"
+        app:layout_constraintStart_toEndOf="@+id/mobile_no"
+        app:layout_constraintTop_toTopOf="@+id/mobile_no" />
+
+    <com.chaos.view.PinView
+        android:id="@+id/LoginPhoneNumberLayoutEditTextField"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:itemWidth="70dp"
+        app:itemHeight="60dp"
+        android:padding="20dp"
+        app:lineWidth="0dp"
+        android:itemBackground="#EAEAEA"
+        app:itemRadius="10dp"
+
+        app:itemSpacing="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+
+        app:layout_constraintTop_toBottomOf="@+id/mobile_no" />
+
+
+    <TextView
+        android:id="@+id/TermsAndConditionCheckBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:minWidth="0dp"
+        android:minHeight="0dp"
+        android:text="@string/resendin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+
+        app:layout_constraintTop_toBottomOf="@+id/LoginPhoneNumberLayoutEditTextField" />
+
+
+    <Button
+        android:id="@+id/VerifyButton"
+        app:layout_constraintTop_toBottomOf="@+id/TermsAndConditionCheckBox"
+        android:layout_width="match_parent"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#ED1C4E"
+        android:layout_marginTop="30dp"
+        android:text="@string/verifyString"
+        android:textAllCaps="false"
+        android:textSize="20dp"
+        android:layout_height="60dp"/>
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
