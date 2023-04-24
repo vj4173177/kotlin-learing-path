@@ -44,5 +44,13 @@
         android:id="@+id/mainHomePage"
         android:name="com.example.miniproject.ui.Screens.MainHomePage"
         android:label="fragment_main_home_page"
-        tools:layout="@layout/fragment_main_home_page" />
+        tools:layout="@layout/fragment_main_home_page" >
+        <action
+            android:id="@+id/action_mainHomePage_to_bindingClass"
+            app:destination="@id/bindingClass" />
+    </fragment>
+    <fragment
+        android:id="@+id/bindingClass"
+        android:name="com.example.miniproject.Binding.BindingClass"
+        android:label="BindingClass" />
 </navigation>
