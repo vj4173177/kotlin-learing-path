@@ -26,7 +26,11 @@
         android:id="@+id/verification"
         android:name="com.example.miniproject.ui.auth.verification"
         android:label="fragment_verification"
-        tools:layout="@layout/fragment_verification" />
+        tools:layout="@layout/fragment_verification" >
+        <action
+            android:id="@+id/action_verification_to_mainHomePage"
+            app:destination="@id/mainHomePage" />
+    </fragment>
     <fragment
         android:id="@+id/mainOnBoardingScreen"
         android:name="com.example.miniproject.ui.on_boarding_screen.MainOnBoardingScreen"
@@ -36,4 +40,9 @@
             android:id="@+id/action_mainOnBoardingScreen_to_login2"
             app:destination="@id/login2" />
     </fragment>
+    <fragment
+        android:id="@+id/mainHomePage"
+        android:name="com.example.miniproject.ui.Screens.MainHomePage"
+        android:label="fragment_main_home_page"
+        tools:layout="@layout/fragment_main_home_page" />
 </navigation>

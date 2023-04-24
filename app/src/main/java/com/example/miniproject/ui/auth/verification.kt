@@ -23,7 +23,7 @@ class verification : Fragment() {
         // Inflate the layout for this fragment
         mainButton.setOnClickListener {
                 view:View->
-            Navigation.findNavController(view).navigate(R.id.action_splashScreen_to_mainOnBoardingScreen)
+            Navigation.findNavController(view).navigate(R.id.action_verification_to_mainHomePage)
         }
         return view.rootView
     }

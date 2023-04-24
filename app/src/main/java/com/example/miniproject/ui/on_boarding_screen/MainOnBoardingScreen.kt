@@ -6,6 +6,8 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
+import androidx.navigation.Navigation
+import androidx.navigation.findNavController
 import androidx.viewpager2.widget.ViewPager2
 import com.example.miniproject.R
 import me.relex.circleindicator.CircleIndicator3
@@ -33,9 +35,12 @@ class MainOnBoardingScreen : Fragment() {
         val buttonForSwipe = view.findViewById<Button>(R.id.OnBoardingScreenButton)
         buttonForSwipe.setOnClickListener {
 
-            viewpagerVar.beginFakeDrag()
-            viewpagerVar.fakeDragBy(-10f)
-            viewpagerVar.endFakeDrag()
+          //  view.findNavController().navigate(R.id.action_mainOnBoardingScreen_to_login2)
+            Navigation.findNavController(view).navigate(R.id.action_mainOnBoardingScreen_to_login2)
+
+//            viewpagerVar.beginFakeDrag()
+//            viewpagerVar.fakeDragBy(-10f)
+//            viewpagerVar.endFakeDrag()
 
         }
 
